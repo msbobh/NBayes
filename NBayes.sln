@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.29411.108
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NBayes", "NBayes.csproj", "{F06278FA-BB8B-4EF3-B9CA-0AFF60B6FF9A}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{F06278FA-BB8B-4EF3-B9CA-0AFF60B6FF9A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F06278FA-BB8B-4EF3-B9CA-0AFF60B6FF9A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F06278FA-BB8B-4EF3-B9CA-0AFF60B6FF9A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F06278FA-BB8B-4EF3-B9CA-0AFF60B6FF9A}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {1B0B0B7F-89C1-41ED-A229-BE0A410861D0}
+	EndGlobalSection
+EndGlobal
