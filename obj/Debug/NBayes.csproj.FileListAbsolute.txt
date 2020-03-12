@@ -15,7 +15,7 @@ C:\Users\rober\github\NBayes\bin\Debug\Accord.MachineLearning.xml
 C:\Users\rober\github\NBayes\bin\Debug\Accord.Math.xml
 C:\Users\rober\github\NBayes\bin\Debug\Accord.Math.Core.xml
 C:\Users\rober\github\NBayes\bin\Debug\Accord.Statistics.xml
-C:\Users\rober\github\NBayes\obj\Debug\NBayes.csprojAssemblyReference.cache
 C:\Users\rober\github\NBayes\obj\Debug\NBayes.csproj.CopyComplete
 C:\Users\rober\github\NBayes\obj\Debug\NBayes.exe
 C:\Users\rober\github\NBayes\obj\Debug\NBayes.pdb
+C:\Users\rober\github\NBayes\obj\Debug\NBayes.csprojAssemblyReference.cache

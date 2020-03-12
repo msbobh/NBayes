@@ -1,11 +1,17 @@
 ﻿using System;
 using System.IO;
 using Accord.Math;
+using Strings;
+using System.Linq;
 
 namespace Utility
 {
     class Functions
     {
+        static public void Welcome()
+        {
+            Console.WriteLine(resources.WelcomeMessage);
+        }
         static public int parseCommandLine(string[] cLine, int maxArgs, int minArgs)
         {
             int numArgs = cLine.Length;
@@ -95,6 +101,24 @@ namespace Utility
             }
 
             return returnArray;
+        }
+
+        static public double CalculateAccuraccy(int[] labels, int[] Predictions)
+        {
+
+            int index = 0;
+            double subtotal = 0;
+            foreach (var result in Predictions)
+            {
+                if (result == labels[index])
+                {
+                    subtotal = subtotal + 1;
+                }
+                index++;
+            }
+
+            double Accuracy = subtotal / Predictions.Count();
+            return Accuracy;
         }
 
     }
