@@ -71,8 +71,10 @@ namespace NBayes
                 labelFname = args[1];
                 modelFname = args[3];
             }
+            //
+            // Check if the training and label files exist and are not locked by anohter process
+            //
 
-            // Check if the training and label files exist and are not locked
             if (!Utility.Functions.checkFile(trainingFname))
             {
                 Console.WriteLine("Error opening file{0}", trainingFname);
@@ -85,18 +87,23 @@ namespace NBayes
                 System.Environment.Exit(1);
             }
 
+            //
             // Read in the training and label files, CSV format
+            //
             CsvReader training_samples = new CsvReader(trainingFname, false);
             int[,] MatrixIn = training_samples.ToMatrix<int>();
             int[][] trainingset = Functions.convertToJaggedArray(MatrixIn);
                         
+            //
             // Naive Bayes gets trained on integer arrays or arrays of "strings"
+            //
             CsvReader label_samples = new CsvReader(labelFname, false);
             
-            int[,] labelsIn = label_samples.ToMatrix<int>(); // Need to figure out what i want here
+            int[,] labelsIn = label_samples.ToMatrix<int>(); // COnvert the labels to a matrix and then to jagged array
             int[][] LabelSet = Functions.convertToJaggedArray (labelsIn);
             int[] output = Functions.convertTointArray(LabelSet);
-            NaiveBayes loaded_nb;   // setup for loading a trained model
+
+            NaiveBayes loaded_nb;   // setup for loading a trained model if one exists
             if (!NoTrain)
             {
                 // Create a new Naive Bayes learning instance
