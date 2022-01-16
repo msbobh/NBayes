@@ -1,7 +1,14 @@
 bin/Debug/*.save
 bin/Debug/*.csv
 bin/Debug/*.sav
+bin/Debug/*.pdb
+obj/Debug/NBayes.exe
+obj/Debug/Nbayes.pdb
+obj/Debug/*.csproj.FileListAbsolute.txt
+obj/Debug/*.csprojAssemblyReference.cache
 .vs/NBayes/v16/.suo
 .vs/NBayes/v16/Server/sqlite3/storage.ide
 bin/Debug/NBayes.*
 obj/Debug/NBayes.*
+obj/Debug/.NETFramework,Version=v4.7.2.AssemblyAttributes.cs
+obj/Debug/AssemblyReference.cache
