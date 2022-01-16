@@ -142,13 +142,13 @@ namespace NBayes
                 Console.WriteLine("     number of samples {0}", result.NumberOfSamples);
                 Console.WriteLine("     number of features: {0}", result.NumberOfInputs);
                 Console.WriteLine("     number of outputs {0}", result.NumberOfOutputs);
-                Console.WriteLine("     Training Error: {0}", result.Training.Mean); // should be 0 or no
+                Console.WriteLine("     Training Error: {0:n2}", result.Training.Mean); // should be 0 or no
                 Console.WriteLine("     Validation Mean: {0}\n", result.Validation.Mean);
                 
                 Console.WriteLine("Creating General Confusion Matrix from Cross Validation");
                 GeneralConfusionMatrix gcm = result.ToConfusionMatrix(trainingset,output);
                 double accuracy = gcm.Accuracy; // should be 0.625
-                Console.WriteLine(" GCM Accuracy {0}\n", accuracy*100);
+                Console.WriteLine(" GCM Accuracy {0}%\n", accuracy*100);
 
 
                 ConfusionMatrix cm = ConfusionMatrix.Estimate(classifier, trainingset, output);
